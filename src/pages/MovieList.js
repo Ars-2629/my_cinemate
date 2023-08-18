@@ -12,7 +12,7 @@ usePageTitle({pageTitle});
   return (
     <main>
       <section className="py-5 px-2.5">
-        <div className="flex justify-start flex-wrap max-sm:justify-center">
+        <div className="flex justify-start flex-wrap max-sm:justify-center ml-1">
           {movies.map((movie)=>(
             <Cards key={movie.id} movie = {movie} />
           ))}
