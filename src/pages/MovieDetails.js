@@ -1,5 +1,5 @@
 import { useState,useEffect } from 'react'; 
-import { useParams } from 'react-router-dom';
+import { useParams,Link } from 'react-router-dom';
 import Backup from '../assets/images/backup.png';
 
 export function MovieDetails() {
@@ -76,7 +76,11 @@ export function MovieDetails() {
    <p className='my-4'> 
     <span className='mr-2 font-bold'>IMDB Rating :</span>
     <a href={`https://www.imdb.com/title/${movie.imdb_id}`} target='_blank' rel='noreferrer'>{movie.imdb_id}</a> 
-  </p>      
+  </p> 
+
+  <Link to={`/video/${params.id}`}>
+  <button type='button' className='border py-1 px-2 rounded-lg text-gray-900  dark:border-gray-700 bg-yellow-400 font-medium'>Watch Trailer</button>
+  </Link>   
 
       </div>
     </section>
