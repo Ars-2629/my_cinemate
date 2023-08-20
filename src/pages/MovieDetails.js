@@ -80,7 +80,7 @@ export function MovieDetails() {
 
   <Link to={`/video/${params.id}`}>
   <button type='button' className='border py-1 px-2 rounded-lg text-gray-900  dark:border-gray-700 bg-yellow-400 font-medium'>Watch Trailer</button>
-  </Link>   
+  </Link>  
 
       </div>
     </section>
